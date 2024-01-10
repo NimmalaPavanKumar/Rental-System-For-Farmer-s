@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/aboutus.css' %}">
+</head>
+<body>
+    <header>
+        <div class="header1">
+          <h1>Rental System For Farmer's</h1>
+        </div>
+        <div class="header2">
+        <nav>
+          <ul>
+            <li><a class="active" href="{% url 'store' %}">Home</a></li>
+            <li><a href="{% url 'aboutus' %}">About Us</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+            <li><a href="{% url 'feedback' %}">Feedback</a></li>
+            <li><a href="{% url 'cart' %}">Cart</a></li>
+            
+            <!-- <li>
+                <div class="form-inline my-2 my-lg-0">
+
+              <a href="{% url 'cart' %}">
+                 <img  id="cart-icon" src="{% static 'images/cart.png' %}">
+              </a>
+              <p id="cart-total">{{cartItems}}</p> &nbsp; &nbsp;
+              </div>
+            </li> -->
+            
+          </ul>
+        </nav>
+      </div>
+      </header>
+
+    <div class="content">
+        <h1>About Us</h1>
+    </div>
+    <section class="privacy-security">
+      <div class="privacy-text">
+          <h2>Commitment to Quality</h2>
+          <p>At Farmer Equipment Rental System, our foremost commitment is to provide farmers with access to high-quality and efficient agricultural tools and machinery. </p>
+          <p>We understand the importance of reliable equipment in farming, and our dedication to quality ensures that farmers have the right tools to optimize their operations.</p>
+      </div>
+  </section>
+  <section class="privacy-security">
+    <div class="privacy-text">
+        <h2>Customer-Centric Approach</h2>
+        <p> We prioritize customer satisfaction above all else. Our team is committed to making the equipment rental process seamless and stress-free. </p>
+        <p> By understanding the unique requirements of each farmer, we ensure that they have the right tools for their specific needs, fostering a positive and supportive relationship.</p>
+    </div>
+</section>
+<section class="privacy-security">
+  <div class="privacy-text">
+      <h2>Empowering Agricultural Excellence:</h2>
+      <p>Our mission extends beyond equipment rental; we aim to empower farmers by providing them with the necessary resources to enhance productivity and achieve success in their agricultural endeavors.</p>
+      <p> Through a diverse range of equipment and a commitment to convenience, we invite farmers to join us in cultivating a future marked by agricultural excellence.</p>
+  </div>
+</section>
+    <section class="privacy-security">
+        <div class="privacy-text">
+            <h2>Privacy and Security</h2>
+            <p>We prioritize the privacy and security of your information. Our platform employs robust security measures to safeguard your data. Rest assured that your personal and transactional details are handled with the utmost confidentiality.</p>
+            <p>For more details on how we handle your data, please refer to our.</p>
+        </div>
+    </section>
+
+    <section class="safety">
+        <div class="safety-text">
+            <h2>Safety First</h2>
+            <p>Your safety is our top priority. We ensure that all equipment undergoes regular maintenance and quality checks. Our user-friendly platform and customer support are designed to provide a secure and reliable experience for all users.</p>
+        </div>
+    </section>
+
+</body>
+</html>

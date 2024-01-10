@@ -1,0 +1,169 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0091ff;
+  backdrop-filter: blur(5px);
+  height: 60px;
+  color: #ffffff;
+  padding: 5px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header:hover {
+  transition: ease-in 0.5s;
+}
+
+.header1 {
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.header2 {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+nav li {
+  margin-right: 35px;
+}
+
+nav li a {
+  padding: 5px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: rgb(36, 84, 172);
+  border-radius: 4px;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: ease-in 0.5s;
+}
+
+#cart-icon {
+  width: 25px;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+#cart-total {
+  display: block;
+  text-align: center;
+  color: #fff;
+  background-color: red;
+  width: 20px;
+  height: 25px;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  color: #ffffff;
+  background-color: #2ecc71;
+}
+
+.services {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f9f9f9;
+}
+
+.service {
+  max-width: 650px;
+  height: 150px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 40px;
+  text-align: justify;
+  background-color: #FFFFFF;
+  transition: box-shadow 0.5s;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.service:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: rgb(0, 255, 157);
+}
+
+.service h3 {
+  color: #333333;
+}
+
+.service p {
+  line-height: 1.6;
+  color: #666666;
+}
+h2{
+  text-align: center;
+}
+/* Additional Services Content */
+.services-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.services-content h2 {
+  color: #333333;
+}
+
+.services-content .service {
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .services {
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    max-width: 100%;
+  }
+
+  .services-content {
+    padding: 30px;
+  }
+}

@@ -1,0 +1,129 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #0091ff;
+  backdrop-filter: blur (5px);
+    height: 60px;
+    color: #ffffff;
+    padding: 5px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: ease-in 0.5s;
+  }
+header:hover{
+    background-color: #9e9c9c6e;
+    transition: ease-in 0.5s;
+}
+  .header1{
+    text-transform: uppercase;
+    margin-left: 20px;
+  }
+  .header2{
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+  
+  nav li {
+    margin-right: 35px;
+
+  }
+  nav li a{
+    padding: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: ease-in 0.5s;
+  }
+  nav li a:hover{
+    background-color: rgb(36, 84, 172);
+    border-radius: 4px;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: ease-in 0.5s;
+  }
+
+#cart-icon {
+  width: 25px;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+#cart-total {
+  display: block;
+  text-align: center;
+  color: #fff;
+  background-color: red;
+  width: 20px;
+  height: 25px;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+
+.content {
+  text-align: center;
+  padding: 5px;
+  text-transform: uppercase;
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+
+.privacy-security,
+.safety {
+  text-align: justify;
+  padding: 30px;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.privacy-text p,
+.safety-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.privacy-text hr,
+.safety-text hr {
+  border: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+.privacy-security h2,
+.safety h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #2c3e50;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .about-us,
+  .privacy-security,
+  .safety {
+      padding: 20px;
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/register.css' %}">
+  <title>Register</title>
+</head>
+<body>
+  <header>
+    <div class="header1">
+      <h1>Farmer Equipment Rental System</h1>
+    </div>
+    <!-- <div class="header2">
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+
+      </ul>
+    </nav>
+  </div> -->
+  </header>
+
+    <div class="content">
+      <div class="container">
+        <form id="registerForm">
+          <h2>Register</h2>
+          <div class="container1">
+              <label for="Username">Username:</label>
+              <input type="text" id="Username" name="username" required>
+          </div>
+          <div class="container1">
+            <label for="email">Email:</label> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="container1">
+          <label for="phno">Number:</label> &nbsp;&nbsp;&nbsp;
+          <input type="phno" id="phno" name="phno" required>
+        </div>
+          <div class="container1">
+              <label for="newPassword">Password:</label>
+              <input type="password" id="Password" name="Password" required>
+          </div>
+
+              <div class="container1">
+              <button type="button">Register</button>
+          </div>
+        </form>
+
+        <p>Already have an account? <a href="{% url 'login' %}">Login here</a>.</p>
+      </div>
+    </div>
+  <!-- <script src="lrscript.js"></script> -->
+</body>
+</html>

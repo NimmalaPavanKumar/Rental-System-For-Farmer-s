@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/services.css' %}">
+</head>
+<body>
+    <header>
+        <div class="header1">
+          <h1>Rental System For Farmer's</h1>
+        </div>
+        <div class="header2">
+        <nav>
+          <ul>
+            <li><a class="active" href="{% url 'store' %}">Home</a></li>
+            <li><a href="{% url 'aboutus' %}">About Us</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+            <li><a href="{% url 'feedback' %}">Feedback</a></li>
+            <li><a href="{% url 'cart' %}">Cart</a></li>
+            
+            <!-- <li>
+                <div class="form-inline my-2 my-lg-0">
+
+              <a href="{% url 'cart' %}">
+                 <img  id="cart-icon" src="{% static 'images/cart.png' %}">
+              </a>
+              <p id="cart-total">{{cartItems}}</p> &nbsp; &nbsp;
+              </div>
+            </li> -->
+            
+          </ul>
+        </nav>
+      </div>
+      </header>
+
+    <div class="content">
+        <h1>SERVICES</h1>
+    </div>
+
+    <section class="services">
+        <div class="mainservices">
+            <div class="service">
+                <h3> Equipment Leasing Solutions</h3>
+                <p>Explore an extensive array of state-of-the-art agricultural machinery available for lease, ranging from innovative plowing systems to specialized crop harvesting equipment. Leasing provides the tools you require without the encumbrance of ownership, offering unmatched flexibility and cost-effectiveness for your farm.</p>
+            </div>
+
+            <div class="service">
+                <h3>Proactive Maintenance Services</h3>
+                <p>Elevate the longevity and efficiency of your farming equipment through our proactive maintenance services. Our expert technicians are committed to preserving the optimal performance of your machinery, minimizing operational downtime, and maximizing overall productivity on your farm.</p>
+            </div>
+        </div>
+
+        <div class="mainservices">
+            <div class="service">
+                <h3>Strategic Advisory Services</h3>
+                <p>Engage in strategic consultations to fine-tune your farm operations with our advisory services. Our seasoned consultants deliver tailored solutions aimed at boosting efficiency, cutting operational costs, and refining comprehensive farm management strategies.</p>
+            </div>
+
+            <div class="service">
+                <h3>Efficient Delivery and Retrieval</h3>
+                <p>Savor the ease of doorstep delivery for your leased equipment. Our streamlined services extend to hassle-free retrieval, ensuring a smooth and stress-free leasing process for all your agricultural requirements.</p>
+            </div>
+        </div>
+
+      </section>
+      
+      <h2>Additional Services</h2>
+        <div class="services-content">
+            <div class="service">
+                <h3>Training Programs</h3>
+                <p>Participate in our comprehensive training programs designed to equip you with the knowledge and skills needed to operate the latest farming equipment effectively. Stay ahead in the ever-evolving field of agriculture.</p>
+            </div>
+
+            <div class="service">
+                <h3>Custom Equipment Solutions</h3>
+                <p>Benefit from tailored equipment solutions to meet the unique demands of your farm. Our team works closely with you to understand your specific requirements and provides customized solutions for optimal efficiency.</p>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

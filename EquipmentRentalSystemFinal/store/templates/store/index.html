@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Equipment Rental System</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    <header>
+        <div class="header1">
+            <h1>Rental System For Farmer's</h1>
+        </div>
+    </header>
+    <div class="outersection">
+        <div class="innersection">
+        <h2>Welcome to our platform connecting farmers with equipment providers!</h2>
+
+        <h3>A rental system for farmers can provide a platform for farmers to access various agricultural resources and equipment without the need for large capital investments. 
+        </h3>
+        <div class="button-container">
+
+            <a href="{% url 'supplier' %}" class="button">Suppliers</a>
+            <a href="{% url 'store' %}" class="button">Users</a>
+        </div>
+        <div class="list">
+        <p>
+            Our platform bridges the gap between farmers and equipment providers, facilitating easy access to essential agricultural resources. <br>
+
+            <!-- With our rental system, farmers can utilize a diverse range of equipment without the burden of hefty capital investments. <br> -->
+            
+            Empowering farmers, our platform fosters efficiency and sustainability in agriculture by offering cost-effective access to crucial resources. <br>
+            
+            Say goodbye to financial barriers – our rental system opens doors for farmers to embrace modern farming techniques and technologies. <br>
+            
+            Join us in revolutionizing agriculture, where accessibility meets innovation for the growth and prosperity of farming communities. <br>
+        </p>
+        </div>
+
+    </div>
+    </div>
+</body>
+</html>

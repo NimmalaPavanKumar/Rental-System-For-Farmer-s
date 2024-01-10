@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/contactus.css' %}">
+</head>
+<body>
+    <header>
+        <div class="header1">
+          <h1>Rental System For Farmer's</h1>
+        </div>
+        <div class="header2">
+        <nav>
+          <ul>
+            <li><a class="active" href="{% url 'store' %}">Home</a></li>
+            <li><a href="{% url 'aboutus' %}">About Us</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+            <li><a href="{% url 'feedback' %}">Feedback</a></li>
+            <li><a href="{% url 'cart' %}">Cart</a></li>
+            
+            <!-- <li>
+                <div class="form-inline my-2 my-lg-0">
+
+              <a href="{% url 'cart' %}">
+                 <img  id="cart-icon" src="{% static 'images/cart.png' %}">
+              </a>
+              <p id="cart-total">{{cartItems}}</p> &nbsp; &nbsp;
+              </div>
+            </li> -->
+            
+          </ul>
+        </nav>
+      </div>
+      </header>
+    
+    <div class="content">
+        <h1>Contact Us</h1>
+    </div>
+
+    <section class="contact">
+      <div class="outercontactdetails">
+      <div class="contactinformation">
+        
+
+        <h2>Welcome to Equipment Rentals! Your inquiries matter, and our team is ready to assist you promptly. Whether you need equipment details, have specific requirements, or just want to connect, we're here for you. Your satisfaction is our priority, ensuring a seamless experience.
+             Thank you for choosing us as your farming equipment partner! Feel free to reach out anytime with questions or inquiries – we're here to help make your farming endeavors a success. </h2>
+        <h2>Trust for top-notch equipment and unparalleled service. Your farming journey starts here, and we're excited to be a part of it. Contact us today and experience the difference with  Equipment Rentals!</h2>
+          <h2>Feel free to reach out to us. If you have any questions or inquiries, we are here to help!</h2>
+      </div>
+    </div>
+
+        <div class="contact-details">
+            <div class="contact-info">
+                <h3>Our Location</h3>
+                <p> Farmer Equipment Rental System, Bengaluru, INDIA, 560064</p>
+            </div>
+
+            <div class="contact-info">
+                <h3>Email Us</h3>
+                <p>Email: <a href="mailto:farmerental@gmail.com">farmerental@gmail.com</a></p>
+            </div>
+
+            <div class="contact-info">
+                <h3>Call Us</h3>
+                <p>Phone: +91 9998889999</p>
+            </div>
+        </div>
+
+        <!-- <div class="contact-form">
+            <h3>CONTACT US</h3>
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div class="innercontact">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="innercontact">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="innercontact">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div> -->
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
